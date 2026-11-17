@@ -1,0 +1,14 @@
+{
+  "name": "chobits-chii",
+  "description": "Chobits Chii themes for Claude Code.",
+  "owner": {
+    "name": "Anime2Real"
+  },
+  "plugins": [
+    {
+      "name": "chobits-chii",
+      "source": "./",
+      "description": "Chii-themed warm palette (light and dark) for Claude Code."
+    }
+  ]
+}

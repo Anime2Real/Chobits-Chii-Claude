@@ -1,0 +1,26 @@
+{
+  "name": "chobits-chii",
+  "displayName": "Chobits Chii",
+  "version": "1.0.0",
+  "description": "Chii-themed warm palette (light and dark) for Claude Code.",
+  "author": {
+    "name": "Anime2Real",
+    "url": "https://github.com/Anime2Real"
+  },
+  "homepage": "https://github.com/Anime2Real/Chobits-Chii-Claude",
+  "repository": "https://github.com/Anime2Real/Chobits-Chii-Claude",
+  "license": "MIT",
+  "icon": "./assets/icon.png",
+  "keywords": [
+    "claude-code",
+    "claude-plugin",
+    "theme",
+    "chobits",
+    "chii"
+  ],
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "experimental": {
+    "themes": "./themes/"
+  }
+}

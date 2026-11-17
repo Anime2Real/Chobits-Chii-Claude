@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" role="img" aria-labelledby="title desc">
+  <title id="title">Chobits Chii palette for Claude Code</title>
+  <desc id="desc">Light and dark palette preview for Claude Code with six key color tokens each.</desc>
+  <rect width="1000" height="380" fill="#f6f1e7"/>
+  <text x="40" y="54" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="28" font-weight="700" fill="#3a332c">Chobits Chii · Claude Code Theme</text>
+  <text x="40" y="82" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="14" fill="#665a4f">Warm cream, warm ink, low-saturation rose · 36 theme overrides · light / dark</text>
+
+  <g>
+    <rect x="40" y="108" width="440" height="236" rx="18" fill="#fdfaf3" stroke="#e3ded7"/>
+    <text x="64" y="146" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="20" font-weight="700" fill="#3a332c">Light</text>
+    <text x="64" y="168" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="12" fill="#83766a">chii-light.json · base: light</text>
+
+    <circle cx="85" cy="215" r="24" fill="#fdfaf3" stroke="#d8ccb9"/>
+    <circle cx="150" cy="215" r="24" fill="#3a332c"/>
+    <circle cx="215" cy="215" r="24" fill="#a85f75"/>
+    <circle cx="280" cy="215" r="24" fill="#b0687f"/>
+    <circle cx="345" cy="215" r="24" fill="#b3a493"/>
+    <circle cx="410" cy="215" r="24" fill="#83766a"/>
+
+    <g font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" text-anchor="middle">
+      <text x="85" y="262" font-size="12" fill="#3a332c">surface</text>
+      <text x="85" y="278" font-size="10" fill="#83766a">#fdfaf3</text>
+      <text x="150" y="262" font-size="12" fill="#3a332c">text</text>
+      <text x="150" y="278" font-size="10" fill="#83766a">#3a332c</text>
+      <text x="215" y="262" font-size="12" fill="#3a332c">claude</text>
+      <text x="215" y="278" font-size="10" fill="#83766a">#a85f75</text>
+      <text x="280" y="262" font-size="12" fill="#3a332c">promptBorder</text>
+      <text x="280" y="278" font-size="10" fill="#83766a">#b0687f</text>
+      <text x="345" y="262" font-size="12" fill="#3a332c">subtle</text>
+      <text x="345" y="278" font-size="10" fill="#83766a">#b3a493</text>
+      <text x="410" y="262" font-size="12" fill="#3a332c">inactive</text>
+      <text x="410" y="278" font-size="10" fill="#83766a">#83766a</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="520" y="108" width="440" height="236" rx="18" fill="#26211d" stroke="#46403b"/>
+    <text x="544" y="146" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="20" font-weight="700" fill="#efe6d8">Dark</text>
+    <text x="544" y="168" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="12" fill="#a4937f">chii-dark.json · base: dark</text>
+
+    <circle cx="565" cy="215" r="24" fill="#26211d" stroke="#6b5c4f"/>
+    <circle cx="630" cy="215" r="24" fill="#efe6d8"/>
+    <circle cx="695" cy="215" r="24" fill="#e0a3b6"/>
+    <circle cx="760" cy="215" r="24" fill="#d99aae"/>
+    <circle cx="825" cy="215" r="24" fill="#6b5c4f"/>
+    <circle cx="890" cy="215" r="24" fill="#a4937f"/>
+
+    <g font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" text-anchor="middle">
+      <text x="565" y="262" font-size="12" fill="#efe6d8">surface</text>
+      <text x="565" y="278" font-size="10" fill="#a4937f">#26211d</text>
+      <text x="630" y="262" font-size="12" fill="#efe6d8">text</text>
+      <text x="630" y="278" font-size="10" fill="#a4937f">#efe6d8</text>
+      <text x="695" y="262" font-size="12" fill="#efe6d8">claude</text>
+      <text x="695" y="278" font-size="10" fill="#a4937f">#e0a3b6</text>
+      <text x="760" y="262" font-size="12" fill="#efe6d8">promptBorder</text>
+      <text x="760" y="278" font-size="10" fill="#a4937f">#d99aae</text>
+      <text x="825" y="262" font-size="12" fill="#efe6d8">subtle</text>
+      <text x="825" y="278" font-size="10" fill="#a4937f">#6b5c4f</text>
+      <text x="890" y="262" font-size="12" fill="#efe6d8">inactive</text>
+      <text x="890" y="278" font-size="10" fill="#a4937f">#a4937f</text>
+    </g>
+  </g>
+
+  <text x="500" y="366" text-anchor="middle" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="11" fill="#83766a">Claude Code themes control semantic colors and surfaces · the main background still comes from your terminal</text>
+</svg>
