@@ -198,8 +198,6 @@ With `--plugin-dir`, restart the session after source edits. A marketplace-insta
 ## 🗺 Roadmap
 
 - **v1.0.0 (current)**: two themes, plugin manifest, marketplace, command, skill, validation script
-- **v1.1**: contrast and accessibility audit; high-contrast and low-saturation variants
-- **v1.2**: Claude Code plugin directory listing, screenshots, and theme previews
 - **Later**: share the palette source with a Codex edition so Chii looks consistent across terminals
 
 ## 🏠 About Anime2Real
