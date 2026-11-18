@@ -2,6 +2,6 @@
   <title id="title">Chobits Chii</title>
   <rect width="1024" height="1024" rx="220" fill="#fdfaf3"/>
   <rect x="36" y="36" width="952" height="952" rx="190" fill="none" stroke="#b0687f" stroke-width="18"/>
-  <circle cx="512" cy="500" r="300" fill="#f3eae1"/>
-  <text x="512" y="660" text-anchor="middle" font-family="'Noto Serif CJK SC', 'Noto Serif CJK JP', serif" font-size="430" font-weight="700" fill="#a85f75">叽</text>
+  <circle cx="512" cy="500" r="310" fill="#f3eae1"/>
+  <text x="512" y="630" text-anchor="middle" font-family="'Noto Serif CJK JP', 'Noto Serif CJK SC', serif" font-size="300" font-weight="700" fill="#a85f75">ちぃ</text>
 </svg>
