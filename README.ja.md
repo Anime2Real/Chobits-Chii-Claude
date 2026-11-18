@@ -1,13 +1,13 @@
 <div align="center">
   <h1>Chobits-Chii-Claude</h1>
-  <p><b>ちぃ～</b> Claude Code をちぃの暖色テーマに</p>
-  <p>Claude Code 向けのちぃ柄テーマプラグインです。</p>
+  <p><b>ちぃ～</b> Claude Code のターミナル UI をちぃの暖色テーマに</p>
+  <p>Claude Code のターミナル UI 向けのちぃ柄テーマプラグインです。</p>
   <p>
     <a href="https://github.com/Anime2Real/Chobits-Chii-Claude"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Chobits--Chii--Claude-181717?logo=github"></a>
     <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
     <a href="https://github.com/topics/claude-code"><img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-b0687f"></a>
     <a href="https://github.com/topics/claude-plugin"><img alt="claude-plugin" src="https://img.shields.io/badge/topic-claude--plugin-b0687f"></a>
-    <a href=".claude-plugin/plugin.json"><img alt="Version" src="https://img.shields.io/badge/version-1.0.0-b0687f"></a>
+    <a href=".claude-plugin/plugin.json"><img alt="Version" src="https://img.shields.io/badge/version-1.0.1-b0687f"></a>
   </p>
   <p>
     <a href="./README.md">简体中文</a> ｜ <a href="./README.ja.md">日本語</a> ｜ <a href="./README.en.md">English</a>
@@ -15,20 +15,22 @@
 </div>
 
 <p align="center">
-  <img src="docs/palette.svg" alt="Chobits Chii ライト / ダークテーマの配色プレビュー" width="100%" />
+  <img src="docs/palette.svg" alt="Chobits Chii ターミナルのライト / ダークテーマ配色プレビュー" width="100%" />
 </p>
 
 > **本リポジトリは配色値とプラグインスクリプトのみを含み、キャラクターのイラスト、Live2D モデル、その他のビジュアルアセットは含みません。** 配色は [Chobits-Chii-DSH](https://github.com/Anime2Real/Chobits-Chii-DSH) の MIT コードから [Chobits-Chii-Kimi](https://github.com/Anime2Real/Chobits-Chii-Kimi) を経て Claude Code 向けに移植しました。Chobits およびちぃ（Chii）の著作権は CLAMP ならびに権利者に帰属します。
+
+> **本リリースは Claude Code のターミナル UI（TUI / CLI）のみを対象としています。** Claude Desktop の Code タブは別途 mod（`$.theme.set`、配色には v2.1.324+）が必要で、本プラグインには含まれません。VS Code 拡張は本プラグインの対象外です。
 
 > **Claude Code のプラグインテーマはまだ experimental です。** テーマは `/theme` から手動で選択します。プラグインが代わりに切り替えることはなく、システムのライト / ダーク設定にも追従しません。ターミナルの背景色はターミナルエミュレーター側の設定で決まり、テーマでは変更できません。
 
 ## ✨ 機能
 
 - **ニュートラルな暖色パレット**：暖かいクリーム色、暖かいインク色の文字、低彩度のローズ系アクセント。長時間のターミナル作業でも読みやすいコントラストに調整
-- **ライト / ダークの 2 テーマ**：`chii-light` と `chii-dark`。それぞれ `base` を `light` / `dark` に設定し、未指定のトークンは対応する組み込みパレットを継承
+- **ライト / ダークの 2 つのターミナルテーマ**：`chii-light` と `chii-dark`。それぞれ `base` を `light` / `dark` に設定し、未指定のトークンは対応する組み込みパレットを継承
 - **36 個のテーマトークン**：ブランド色、本文、枠線、モード表示、diff、メッセージ背景、使用量メーター、ラベル、shimmer をカバー
 - **プラグインとして配布**：1 つの `.claude-plugin/plugin.json` にテーマ、スラッシュコマンド、Skill、marketplace マニフェストを収録
-- **テーマのネイティブ検出**：Claude Code がプラグイン直下の `themes/` を走査し、`/theme` に一覧表示します。Kimi 版のような同期 Hook は不要です
+- **テーマのネイティブ検出**：Claude Code がターミナル UI でプラグイン直下の `themes/` を走査し、`/theme` に一覧表示します。Kimi 版のような同期 Hook は不要です
 - **依存ゼロ**：検証スクリプトは Node 標準モジュールのみ。ビルド手順も実行時依存もありません
 - **検証可能**：`scripts/validate.mjs` がマニフェスト、marketplace、Skill / Command の frontmatter、トークン名、色値をチェック
 
@@ -51,6 +53,8 @@ Claude Code が必要です（本リポジトリは **2.1.326** で検証とロ�
 
 - `Chobits Chii (Light)`
 - `Chobits Chii (Dark)`
+
+これらのテーマは Claude Code のターミナル UI で有効です。Claude Desktop の Code タブには別途 mod が必要で、本プラグインでは適用されません。
 
 ### ローカル開発
 
@@ -188,7 +192,7 @@ NOTICE                          # 配色の出典とキャラクター権利の�
 ## 🧱 互換性と制限
 
 - **テーマは experimental**：Claude Code はプラグインテーマを `experimental.themes` の下に置いており、フィールドやトークンは変更される可能性があります
-- **ターミナル UI のみ**：テーマは Claude Code のターミナル描画に作用します。デスクトップの Code タブや VS Code 拡張では、それぞれのバージョンの対応範囲に依存します
+- **TUI / CLI のみ**：現在の `themes/` JSON は Claude Code のターミナル UI にのみ作用します。Claude Desktop の Code タブは mod の `$.theme.set`（配色には v2.1.324+）が必要で、本バージョンには含まれません。VS Code 拡張は本プラグインの対象外です
 - **背景は変わらない**：ターミナルのメイン背景はターミナル側の設定です。Claude テーマは意味的な背景のみを上書きします
 - **ライト / ダークの自動切り替えなし**：`/theme` から手動で選択します
 - **テーマの自動選択なし**：プラグインをインストールしてもテーマは有効になりません
@@ -197,7 +201,7 @@ NOTICE                          # 配色の出典とキャラクター権利の�
 
 ## 🗺 ロードマップ
 
-- **v1.0.0（現在）**：2 テーマ、プラグインマニフェスト、marketplace、コマンド、Skill、検証スクリプト
+- **v1.0.1（現在）**：2 つのターミナルテーマ、プラグインマニフェスト、marketplace、コマンド、Skill、検証スクリプト
 
 ## 🏠 Anime2Real について
 
@@ -213,7 +217,7 @@ NOTICE                          # 配色の出典とキャラクター権利の�
 
 | プロジェクト | 説明 |
 | --- | --- |
-| [Chobits-Chii-Claude](https://github.com/Anime2Real/Chobits-Chii-Claude) | Claude Code 向けちぃテーマプラグイン（本リポジトリ） |
+| [Chobits-Chii-Claude](https://github.com/Anime2Real/Chobits-Chii-Claude) | Claude Code ターミナル向けちぃテーマプラグイン（本リポジトリ） |
 | [Chobits-Chii-Kimi](https://github.com/Anime2Real/Chobits-Chii-Kimi) | Kimi Code CLI 向けちぃテーマプラグイン（移植元） |
 | [Chobits-Chii-DSH](https://github.com/Anime2Real/Chobits-Chii-DSH) | DeepSeek Harness Web UI 向けちぃスキンプラグイン（配色元） |
 | [Chobits-Chii-Mascot](https://github.com/Anime2Real/Chobits-Chii-Mascot) | デスクトップマスコット（Electron + Live2D） |

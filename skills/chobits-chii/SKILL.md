@@ -1,14 +1,18 @@
 ---
 name: chobits-chii
-description: Apply, verify, or customize the Chobits Chii themes (chii-light / chii-dark) in Claude Code.
+description: Apply, verify, or customize the Chobits Chii themes (chii-light / chii-dark) in the Claude Code terminal UI.
 ---
 
 # Chobits Chii theme
 
-This plugin ships two Claude Code themes in `themes/`:
+This plugin ships two Claude Code terminal themes in `themes/`:
 
 - `chii-light.json` — warm cream, warm ink, muted rose accents
 - `chii-dark.json` — warm dark version
+
+## Scope
+
+These themes apply to the Claude Code terminal UI. The Claude Desktop Code tab uses a mod (`$.theme.set`) and is not covered by this plugin.
 
 ## Apply
 
@@ -16,7 +20,7 @@ This plugin ships two Claude Code themes in `themes/`:
 2. Pick **Chobits Chii (Light)** or **Chobits Chii (Dark)**.
 3. Theme selection is interactive. Never claim the theme is active until the user confirms.
 
-Claude Code lists themes contributed by installed plugins automatically. The plugin's theme files are read from `${CLAUDE_PLUGIN_ROOT}/themes/`.
+Claude Code lists themes contributed by installed plugins in the terminal UI. The plugin's theme files are read from `${CLAUDE_PLUGIN_ROOT}/themes/`.
 
 ## Customize
 

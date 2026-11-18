@@ -8,7 +8,7 @@
     {
       "name": "chobits-chii",
       "source": "./",
-      "description": "Chii-themed warm palette (light and dark) for Claude Code."
+      "description": "Chii-themed warm palette (light and dark) for the Claude Code terminal UI."
     }
   ]
 }

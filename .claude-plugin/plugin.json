@@ -1,8 +1,8 @@
 {
   "name": "chobits-chii",
   "displayName": "Chobits Chii",
-  "version": "1.0.0",
-  "description": "Chii-themed warm palette (light and dark) for Claude Code.",
+  "version": "1.0.1",
+  "description": "Chii-themed warm palette (light and dark) for the Claude Code terminal UI.",
   "author": {
     "name": "Anime2Real",
     "url": "https://github.com/Anime2Real"

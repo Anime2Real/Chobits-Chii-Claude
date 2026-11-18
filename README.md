@@ -1,13 +1,13 @@
 <div align="center">
   <h1>Chobits-Chii-Claude</h1>
-  <p><b>叽～</b> 把 Claude Code 换成小叽的暖色主题</p>
-  <p>A Chii-themed theme plugin for Claude Code.</p>
+  <p><b>叽～</b> 把 Claude Code 终端界面换成小叽的暖色主题</p>
+  <p>A Chii-themed theme plugin for the Claude Code terminal UI.</p>
   <p>
     <a href="https://github.com/Anime2Real/Chobits-Chii-Claude"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Chobits--Chii--Claude-181717?logo=github"></a>
     <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
     <a href="https://github.com/topics/claude-code"><img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-b0687f"></a>
     <a href="https://github.com/topics/claude-plugin"><img alt="claude-plugin" src="https://img.shields.io/badge/topic-claude--plugin-b0687f"></a>
-    <a href=".claude-plugin/plugin.json"><img alt="Version" src="https://img.shields.io/badge/version-1.0.0-b0687f"></a>
+    <a href=".claude-plugin/plugin.json"><img alt="Version" src="https://img.shields.io/badge/version-1.0.1-b0687f"></a>
   </p>
   <p>
     <a href="./README.md">简体中文</a> ｜ <a href="./README.ja.md">日本語</a> ｜ <a href="./README.en.md">English</a>
@@ -15,20 +15,22 @@
 </div>
 
 <p align="center">
-  <img src="docs/palette.svg" alt="Chobits Chii 明暗双主题配色预览" width="100%" />
+  <img src="docs/palette.svg" alt="Chobits Chii 终端明暗双主题配色预览" width="100%" />
 </p>
 
 > **说明：本仓库只包含配色与插件脚本，不包含角色插画、Live2D 模型或其他视觉资产。** 配色取自 [Chobits-Chii-DSH](https://github.com/Anime2Real/Chobits-Chii-DSH) 的 MIT 代码，并经 [Chobits-Chii-Kimi](https://github.com/Anime2Real/Chobits-Chii-Kimi) 移植到 Claude Code。Chobits 与小叽（Chii）的著作权归 CLAMP 及相关权利方所有。
+
+> **当前版本只覆盖 Claude Code 的终端界面（TUI / CLI）。** Claude Desktop 的 Code tab 需要单独的 mod（`$.theme.set`，改色需 v2.1.324+），本插件暂未包含；VS Code 扩展不在本插件覆盖范围内。
 
 > **Claude Code 的插件主题仍在 `experimental` 阶段。** 主题通过 `/theme` 手动选择；插件不能替用户自动切换，本插件也不提供跟随系统明暗的自动切换。终端主背景由你的终端模拟器决定，不受主题控制。
 
 ## ✨ 功能特性
 
 - **暖色中性配色**：暖奶油底、暖墨文字、低饱和玫瑰点缀，色板收敛到适合长时间阅读的终端对比度
-- **明暗双主题**：`chii-light` 与 `chii-dark` 两套 Claude Code 主题，分别以 `light` / `dark` 为 base，未覆盖的 token 自动继承对应内置色板
+- **明暗双主题**：`chii-light` 与 `chii-dark` 两套 Claude Code 终端主题，分别以 `light` / `dark` 为 base，未覆盖的 token 自动继承对应内置色板
 - **36 个主题 token**：覆盖品牌色、正文、边框、模式指示、diff、消息背景、用量条、标签与 shimmer
 - **插件化分发**：一个 `.claude-plugin/plugin.json` 同时打包主题、Slash 命令、Skill 和 marketplace 清单
-- **原生主题发现**：Claude Code 会扫描插件根目录的 `themes/`，`/theme` 直接列出，不需要 Kimi 版那样的同步 Hook
+- **原生主题发现**：Claude Code 会在终端界面扫描插件根目录的 `themes/`，`/theme` 直接列出，不需要 Kimi 版那样的同步 Hook
 - **零依赖**：校验脚本只用 Node 内置模块，没有构建步骤、没有运行时依赖
 - **可校验**：`scripts/validate.mjs` 检查清单、marketplace、Skill/Command frontmatter、token 名与颜色格式
 
@@ -51,6 +53,8 @@
 
 - `Chobits Chii (Light)`
 - `Chobits Chii (Dark)`
+
+主题只在 Claude Code 的终端界面生效。Claude Desktop 的 Code tab 需要单独的 mod，本插件不会自动应用。
 
 ### 本地开发
 
@@ -188,7 +192,7 @@ NOTICE                          # 配色来源与角色权利说明
 ## 🧱 兼容性与限制
 
 - **主题仍是 experimental**：Claude Code 把插件主题放在 `experimental.themes` 下，字段和 token 可能随版本变化
-- **仅终端界面**：主题作用于 Claude Code 的终端渲染；桌面端 Code 标签页、VS Code 扩展等界面以对应版本的支持范围为准
+- **仅 TUI / CLI**：当前 `themes/` JSON 只影响 Claude Code 的终端界面；Claude Desktop 的 Code tab 需要 mod 的 `$.theme.set`（改色需 v2.1.324+），本版本未包含；VS Code 扩展不在本插件覆盖范围内
 - **背景不随主题变化**：终端主背景由终端主题决定；Claude 主题只覆盖语义背景
 - **无自动明暗切换**：需要手动在 `/theme` 中选择
 - **插件主题不能自动选中**：安装后仍需用户打开 `/theme`
@@ -197,7 +201,7 @@ NOTICE                          # 配色来源与角色权利说明
 
 ## 🗺 路线图
 
-- **v1.0.0（当前）**：双主题、插件清单、marketplace、命令、Skill、校验脚本
+- **v1.0.1（当前）**：双主题（TUI）、插件清单、marketplace、命令、Skill、校验脚本
 
 ## 🏠 关于 Anime2Real
 
@@ -213,7 +217,7 @@ NOTICE                          # 配色来源与角色权利说明
 
 | 项目 | 说明 |
 | --- | --- |
-| [Chobits-Chii-Claude](https://github.com/Anime2Real/Chobits-Chii-Claude) | Claude Code 小叽主题插件（本仓库） |
+| [Chobits-Chii-Claude](https://github.com/Anime2Real/Chobits-Chii-Claude) | Claude Code 终端小叽主题插件（本仓库） |
 | [Chobits-Chii-Kimi](https://github.com/Anime2Real/Chobits-Chii-Kimi) | Kimi Code CLI 小叽主题插件（本仓库的移植参考） |
 | [Chobits-Chii-DSH](https://github.com/Anime2Real/Chobits-Chii-DSH) | DeepSeek Harness Web UI 小叽皮肤插件（配色来源） |
 | [Chobits-Chii-Mascot](https://github.com/Anime2Real/Chobits-Chii-Mascot) | 桌面精灵客户端（Electron + Live2D） |

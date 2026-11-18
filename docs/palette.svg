@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380" role="img" aria-labelledby="title desc">
-  <title id="title">Chobits Chii palette for Claude Code</title>
-  <desc id="desc">Light and dark palette preview for Claude Code with six key color tokens each.</desc>
+  <title id="title">Chobits Chii palette for the Claude Code terminal</title>
+  <desc id="desc">Light and dark terminal palette preview for Claude Code with six key color tokens each.</desc>
   <rect width="1000" height="380" fill="#f6f1e7"/>
-  <text x="40" y="54" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="28" font-weight="700" fill="#3a332c">Chobits Chii · Claude Code Theme</text>
+  <text x="40" y="54" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="28" font-weight="700" fill="#3a332c">Chobits Chii · Claude Code Terminal Theme</text>
   <text x="40" y="82" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="14" fill="#665a4f">Warm cream, warm ink, low-saturation rose · 36 theme overrides · light / dark</text>
 
   <g>
@@ -61,5 +61,5 @@
     </g>
   </g>
 
-  <text x="500" y="366" text-anchor="middle" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="11" fill="#83766a">Claude Code themes control semantic colors and surfaces · the main background still comes from your terminal</text>
+  <text x="500" y="366" text-anchor="middle" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans', sans-serif" font-size="11" fill="#83766a">Claude Code terminal themes control semantic colors and surfaces · the main background still comes from your terminal</text>
 </svg>

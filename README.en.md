@@ -1,13 +1,13 @@
 <div align="center">
   <h1>Chobits-Chii-Claude</h1>
-  <p><b>Chii~</b> A Chii-themed warm palette for Claude Code</p>
-  <p>A Chii-themed theme plugin for Claude Code.</p>
+  <p><b>Chii~</b> A Chii-themed warm palette for the Claude Code terminal UI</p>
+  <p>A Chii-themed theme plugin for the Claude Code terminal UI.</p>
   <p>
     <a href="https://github.com/Anime2Real/Chobits-Chii-Claude"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Chobits--Chii--Claude-181717?logo=github"></a>
     <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
     <a href="https://github.com/topics/claude-code"><img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-b0687f"></a>
     <a href="https://github.com/topics/claude-plugin"><img alt="claude-plugin" src="https://img.shields.io/badge/topic-claude--plugin-b0687f"></a>
-    <a href=".claude-plugin/plugin.json"><img alt="Version" src="https://img.shields.io/badge/version-1.0.0-b0687f"></a>
+    <a href=".claude-plugin/plugin.json"><img alt="Version" src="https://img.shields.io/badge/version-1.0.1-b0687f"></a>
   </p>
   <p>
     <a href="./README.md">简体中文</a> ｜ <a href="./README.ja.md">日本語</a> ｜ <a href="./README.en.md">English</a>
@@ -15,20 +15,22 @@
 </div>
 
 <p align="center">
-  <img src="docs/palette.svg" alt="Chobits Chii light and dark palette preview" width="100%" />
+  <img src="docs/palette.svg" alt="Chobits Chii terminal light and dark palette preview" width="100%" />
 </p>
 
 > **This repository ships color values and plugin scripts only. It does not include character artwork, Live2D models, or other visual assets.** The palette is derived from the MIT-licensed code of [Chobits-Chii-DSH](https://github.com/Anime2Real/Chobits-Chii-DSH) and ported to Claude Code via [Chobits-Chii-Kimi](https://github.com/Anime2Real/Chobits-Chii-Kimi). Chobits and Chii are © CLAMP and the relevant rights holders.
+
+> **This release targets the Claude Code terminal UI (TUI / CLI) only.** The Claude Desktop Code tab requires a separate mod (`$.theme.set`, v2.1.324+ for colors) and is not included; the VS Code extension is outside this plugin's scope.
 
 > **Claude Code plugin themes are still experimental.** Select a theme with `/theme`; a plugin cannot switch it for you and does not follow the system light/dark setting. The terminal's main background is controlled by your terminal emulator, not by the theme.
 
 ## ✨ Features
 
 - **Neutral warm palette**: warm cream, warm ink text, and low-saturation rose accents, tuned for comfortable long terminal sessions
-- **Light and dark themes**: `chii-light` and `chii-dark`, each with the matching `base` value so unspecified tokens inherit the correct built-in palette
+- **Light and dark terminal themes**: `chii-light` and `chii-dark`, each with the matching `base` value so unspecified tokens inherit the correct built-in palette
 - **36 theme tokens**: brand accents, body text, borders, mode indicators, diffs, message surfaces, usage meters, labels, and shimmer
 - **Packaged as a plugin**: one `.claude-plugin/plugin.json` bundles the themes, a slash command, a skill, and a marketplace manifest
-- **Native theme discovery**: Claude Code scans the plugin's `themes/` directory, so `/theme` lists both themes without the sync hook used by the Kimi version
+- **Native theme discovery**: Claude Code scans the plugin's `themes/` directory in the terminal UI, so `/theme` lists both themes without the sync hook used by the Kimi version
 - **Zero dependencies**: the validation script uses Node built-ins only; there is no build step and no runtime dependency
 - **Validated**: `scripts/validate.mjs` checks the manifest, marketplace, skill/command frontmatter, token names, and color values
 
@@ -51,6 +53,8 @@ Pick one of:
 
 - `Chobits Chii (Light)`
 - `Chobits Chii (Dark)`
+
+These themes apply to the Claude Code terminal UI. The Claude Desktop Code tab needs a separate mod and is not applied by this plugin.
 
 ### Local development
 
@@ -188,7 +192,7 @@ With `--plugin-dir`, restart the session after source edits. A marketplace-insta
 ## 🧱 Compatibility and limits
 
 - **Themes are experimental**: Claude Code exposes plugin themes under `experimental.themes`; fields and tokens may change
-- **Terminal UI only**: themes affect Claude Code's terminal rendering; support in the Desktop Code tab and VS Code extension depends on those versions
+- **TUI / CLI only**: the `themes/` JSON files affect Claude Code's terminal UI only; the Claude Desktop Code tab requires a mod with `$.theme.set` (v2.1.324+ for colors) and is not included; the VS Code extension is outside this plugin's scope
 - **Background is not themed**: the terminal's main background is controlled by the terminal; Claude themes only cover semantic surfaces
 - **No automatic light/dark switching**: select a theme manually with `/theme`
 - **No auto-selection**: installing the plugin does not activate a theme
@@ -197,7 +201,7 @@ With `--plugin-dir`, restart the session after source edits. A marketplace-insta
 
 ## 🗺 Roadmap
 
-- **v1.0.0 (current)**: two themes, plugin manifest, marketplace, command, skill, validation script
+- **v1.0.1 (current)**: two terminal themes, plugin manifest, marketplace, command, skill, validation script
 
 ## 🏠 About Anime2Real
 
@@ -213,7 +217,7 @@ With `--plugin-dir`, restart the session after source edits. A marketplace-insta
 
 | Project | Description |
 | --- | --- |
-| [Chobits-Chii-Claude](https://github.com/Anime2Real/Chobits-Chii-Claude) | Chii theme plugin for Claude Code (this repository) |
+| [Chobits-Chii-Claude](https://github.com/Anime2Real/Chobits-Chii-Claude) | Chii terminal theme plugin for Claude Code (this repository) |
 | [Chobits-Chii-Kimi](https://github.com/Anime2Real/Chobits-Chii-Kimi) | Chii theme plugin for Kimi Code CLI (porting reference) |
 | [Chobits-Chii-DSH](https://github.com/Anime2Real/Chobits-Chii-DSH) | Chii skin plugin for the DeepSeek Harness web UI (palette source) |
 | [Chobits-Chii-Mascot](https://github.com/Anime2Real/Chobits-Chii-Mascot) | Desktop mascot client (Electron + Live2D) |

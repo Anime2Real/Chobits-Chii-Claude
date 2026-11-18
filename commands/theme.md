@@ -14,4 +14,4 @@ Chobits Chii 主题由本插件提供，位于 `${CLAUDE_PLUGIN_ROOT}/themes/`�
    - `Chobits Chii (Dark)`
 4. 告诉用户输入 `/theme` 自行选择；不要声称已经替用户切换主题。
 5. 如果用户想自定义，建议复制到 `~/.claude/themes/` 并改文件名与 `name`，避免与插件主题重名；保留 `base` 为 `light` 或 `dark`。
-6. 如果用户问背景色，说明 Claude Code 主题不控制终端背景，背景由终端模拟器决定。
+6. 如果用户问桌面端或背景色，说明本插件只覆盖终端 TUI；Claude Desktop 的 Code tab 需要单独的 mod，终端背景由终端模拟器决定。
