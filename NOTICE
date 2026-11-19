@@ -4,6 +4,9 @@ Copyright (c) 2026 Anime2Real
 The palette in this repository is derived from the MIT-licensed code of
 Chobits-Chii-DSH (https://github.com/Anime2Real/Chobits-Chii-DSH), via
 Chobits-Chii-Kimi (https://github.com/Anime2Real/Chobits-Chii-Kimi).
+That MIT grant applies to the version from which the palette was derived;
+current Chobits-Chii-DSH releases are under PolyForm Noncommercial 1.0.0.
+
 
 No character artwork, Live2D models, textures, or other visual assets from
 those projects are included. This repository only ships color token values

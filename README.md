@@ -4,7 +4,7 @@
   <p>A Chii-themed theme plugin for the Claude Code terminal UI.</p>
   <p>
     <a href="https://github.com/Anime2Real/Chobits-Chii-Claude"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Chobits--Chii--Claude-181717?logo=github"></a>
-    <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
+    <a href="LICENSE"><img alt="License: PolyForm NC 1.0.0" src="https://img.shields.io/badge/License-PolyForm%20NC%201.0.0-orange.svg"></a>
     <a href="https://github.com/topics/claude-code"><img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-b0687f"></a>
     <a href="https://github.com/topics/claude-plugin"><img alt="claude-plugin" src="https://img.shields.io/badge/topic-claude--plugin-b0687f"></a>
     <a href=".claude-plugin/plugin.json"><img alt="Version" src="https://img.shields.io/badge/version-1.0.1-b0687f"></a>
@@ -205,7 +205,7 @@ NOTICE                          # 配色来源与角色权利说明
 
 ## 🏠 关于 Anime2Real
 
-[Anime2Real](https://github.com/Anime2Real) 是一群把「二次元角色」做成能真正跑起来的东西的开发者：桌宠、语音、Live2D、3D、对话模型，一路从素材生产做到能安装的成品，全部开源。小叽（Chii）是我们的第一个角色，这个主题是她在 Claude Code 里的一个落脚点。
+[Anime2Real](https://github.com/Anime2Real) 是一群把「二次元角色」做成能真正跑起来的东西的开发者：桌宠、语音、Live2D、3D、对话模型，一路从素材生产做到能安装的成品，能公开的部分全部源码公开。小叽（Chii）是我们的第一个角色，这个主题是她在 Claude Code 里的一个落脚点。
 
 - 组织主页：[github.com/Anime2Real](https://github.com/Anime2Real)
 - 想看小叽在桌面上活起来：[Chobits-Chii-Mascot](https://github.com/Anime2Real/Chobits-Chii-Mascot) / [发布页](https://anime2real.github.io/Chobits-Chii-Mascot-Release/)
@@ -227,13 +227,11 @@ NOTICE                          # 配色来源与角色权利说明
 | [Chobits-Chii-LLM](https://github.com/Anime2Real/Chobits-Chii-LLM) | 小叽日语对话 LLM |
 | [Chobits-Chii-Live2D](https://github.com/Anime2Real/Chobits-Chii-Live2D) | 小叽 Live2D 模型与动作资产 |
 
-## 📄 许可证
+## 📄 许可协议
 
-**代码与主题 JSON 以 [MIT](./LICENSE) 发布；本仓库不包含角色资产。**
+本仓库采用「严格非商用 + 双授权」，**不是 OSI 开源**。
 
-- **代码与主题**：`.claude-plugin/`、`themes/`、`commands/`、`skills/`、`scripts/`、`assets/` 均为 MIT
-- **配色来源**：色板取自 [Chobits-Chii-DSH](https://github.com/Anime2Real/Chobits-Chii-DSH) 的 MIT 代码；该项目的插画、Live2D 模型和其他资产没有复制到本仓库
-- **角色形象**：小叽（Chii）与《人形电脑天使心》的著作权归 CLAMP 及相关权利方所有；Anime2Real 不主张、也无法授予这些权利
-- **无第三方运行时**：本仓库不包含 Live2D Cubism Core、pixi 或其他第三方运行时
-
-详见 [LICENSE](./LICENSE) 与 [NOTICE](./NOTICE)。
+- **代码**：PolyForm Noncommercial 1.0.0，见 [LICENSE](./LICENSE)。
+- **商业使用**：公开许可不允许商业使用；如需商用，请通过 [COMMERCIAL.md](./COMMERCIAL.md) 联系。
+- **历史版本**：此前版本的授权继续有效，见 [LICENSE-HISTORY.md](./LICENSE-HISTORY.md)。
+- **第三方素材 / 角色 IP**：不适用上述许可，见 [ASSETS.md](./ASSETS.md) / [NOTICE](./NOTICE)。
